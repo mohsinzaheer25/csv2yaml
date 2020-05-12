@@ -84,7 +84,7 @@ func ReadCsv(filename string) {
 		fmt.Fprintln( file, "- " + result[i+1][0] + ":")
 		for length :=0; length < (len(headersLength)); length++ {
 			if length <= (len(headersLength) - 2) {
-				fmt.Fprintln( file, "    " + result[i][length+1] + ": " + result[i+1][length+1])
+				fmt.Fprintln( file, "    " + result[0][length+1] + ": " + result[i+1][length+1])
 			}
 		}
 	}
